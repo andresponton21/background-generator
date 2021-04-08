@@ -1,0 +1,9 @@
+.background {
+    background-color: aqua;
+}
+.button {
+    border: black solid 3px;
+    display: flex;
+    align-items: center;
+    
+}
