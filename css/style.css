@@ -1,9 +1,17 @@
 .background {
     background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+
+
 }
 .button {
     border: black solid 3px;
-    display: flex;
-    align-items: center;
+    
+}
+.rgb {
+    background-color: white;
     
 }

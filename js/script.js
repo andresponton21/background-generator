@@ -14,7 +14,8 @@ const getRandomColorChannel = function(options=256) {
 // COMPLETE THE FOLLOWING STEPS
 
 // 1) Write an rgb-color string using `getRandomColorChannel()` that can be set as the value for `background-color` in CSS
-const setnNewColour = () => {const red = getRandomColorChannel()
+const setnNewColour = () => {
+  const red = getRandomColorChannel()
   const green = getRandomColorChannel()
   const blue = getRandomColorChannel()
   
@@ -22,10 +23,21 @@ const setnNewColour = () => {const red = getRandomColorChannel()
   
   // 2) Update user interface (the `document`), setting the new colour string to the body's background-color property
   const newColor = document.querySelector('.background')
+
   
   // 3) Use the three individual RGB numbers to update the HTML element "rgb(###, ####, ###)" (replacing ###s with the values)
-  newColor.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`}
+  const printColor = newColor.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`
+
+  document.querySelector('.rgb').textContent = `this is the color in rgb ${printColor}`
+
+
+}
+
+
   setnNewColour()
+
+  
+  
 
 
 // 4) Wrap the entire procedure in a function named `setNewColour()`, call it multiple times from the `console` to test
