@@ -22,19 +22,19 @@ const setnNewColour = () => {
   console.log(red, green, blue)
   
   // 2) Update user interface (the `document`), setting the new colour string to the body's background-color property
-  const newColor = document.querySelector('.background')
+  const newColor = document.querySelector('.layout')
 
   
   // 3) Use the three individual RGB numbers to update the HTML element "rgb(###, ####, ###)" (replacing ###s with the values)
   const printColor = newColor.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`
 
-  document.querySelector('.rgb').textContent = `this is the color in rgb ${printColor}`
+  document.querySelector('.colorL').textContent = `this is the color in rgb ${printColor}`
 
 
 }
 
-
-  setnNewColour()
+  
+  document.querySelector(".btn").addEventListener(`click`, setnNewColour) 
 
   
   
